@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Grotesk";
+    src: url("fonts/Grotesk.ttf");
+    }
+
+    @font-face {
+        font-family: "GroteskBold";
+        src: url("fonts/GroteskBold.ttf");
+        }
+
+body{
+    margin: 0;
+    background-color: #0E7C7B;
+    color: white;
+}
+
+#main{
+    font-family: "GroteskBold";
+}
+
+#name{
+    font-size: 36px;
+    position: relative;
+    font-family: "Grotesk";
+    left: 50px;
+    font-weight: 300;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links ul{
+    display: flex;
+    position: relative;
+    right: 50px;
+}
+
+#links li{
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+#links a, .workDescription a{
+    text-decoration: none;
+    color: white;
+}
+
+#about{
+    width: 60%;
+}
+
+#aboutText{
+    font-size: 80px;
+    color: white;
+    position: relative;
+    justify-self: center;
+    line-height: 100px;
+    font-weight: bold;
+    left: 50%;
+}
+
+
+#intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 70%;
+    position: relative;
+    left: 26%;
+}
+
+.line{
+    width: 70px;
+}
+
+.description{
+    width: 50%;
+    line-height: 30px;
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.description p{
+    font-size: 16px;
+}
+
+#stacks{
+    font-size: 14px;
+}
+
+#workDiv{
+    margin-top: 100px;
+}
+
+.work{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 50px 0;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.workDescription h1{
+    font-size: 72px;
+    font-family: "GroteskBold";
+}
+
+.workDescription{
+    width: 50%;
+    line-height: 30px;
+    font-size: 12px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.workDescription p{
+    display: none;
+}
