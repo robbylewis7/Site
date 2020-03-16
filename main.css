@@ -10,7 +10,7 @@
 
 body{
     margin: 0;
-    background-color: #0E7C7B;
+    background: linear-gradient(141deg, #0E7C7B 0%, #4F9F9F 51%, #91C3C3 75%);
     color: white;
 }
 
@@ -52,6 +52,8 @@ body{
     width: 60%;
 }
 
+
+
 #aboutText{
     font-size: 80px;
     color: white;
@@ -61,6 +63,8 @@ body{
     font-weight: bold;
     left: 50%;
 }
+
+
 
 
 #intro{
@@ -93,6 +97,9 @@ body{
 
 #workDiv{
     margin-top: 100px;
+    width: 70%;
+    position: relative;
+    left: 22%;
 }
 
 .work{
@@ -101,7 +108,7 @@ body{
     align-items: center;
     width: 100%;
     position: relative;
-    margin: 50px 0;
+    margin: 150px 0;
 }
 
 .title{
@@ -123,4 +130,72 @@ body{
 
 .workDescription p{
     display: none;
+    position: absolute;
 }
+
+.workDescription a:hover + #WDText{
+    display: inline;
+}
+
+.workDescription a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #0E7C7B;
+}
+
+#contactFooter{
+    text-align: center;
+}
+
+#contactFooter a{
+    text-decoration-line: none;
+}
+
+#contactFooter a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #0E7C7B;
+}
+
+#contact{
+    color: white;
+    font-size: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+    #header{
+        display: none;
+    }
+
+    #about{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #aboutText{
+        font-size: 30px;
+        color: white;
+        position: relative;
+        line-height: normal;
+        font-weight: bold;
+        left: 0%;
+        padding: 0 40px;
+    }
+
+    #intro{
+        width: 100%;
+        left: 0%;
+    }
+
+    .workDiv{
+        margin-top: 100px;
+    }
+
+    .work{
+        margin-bottom: 350px;
+    }
+
+
+    .workDescription p{
+        display: inline;
+        position: absolute;
+    }
+  }
