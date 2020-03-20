@@ -3,25 +3,50 @@
 <head>
 <title>Home</title>
 <link rel="stylesheet" type="text/css" href="main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet"><body>
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 <div id = "main">
-    <div id = "header">
-        <h1 id = "name">Robby Lewis</h1>
-        <div id = "links">
-            <ul>
-                <li>
-                    <a href = "">Contact</a>
-                </li>
-                <li>
-                    <a href = "">LinkedIn</a>
-                </li>
-                <li>
-                    <a href = "">Github</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <header class="global-nav">
+        <nav role="navigation" class="container">
+          <ul class="nav-wrapper">
+            <h2>Robby Lewis</h2>
+            <li class="navsection-primary">
+              <ul>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">LinkedIn</a></li>
+                <li><a href="/">Github</a></li>
+              </ul>
+            </li>
+            <!-- End Primary Section -->
+            <!-- Start Mobile Section -->
+            <li class="navsection-mobile">
+              <!-- Mobile Menu Button -->
+                       <h2>Menu</h2>
+              <a class="mobilemenu-wrapper" id="toggle">
+                  <span class="bars"></span>
+                  <span class="bars"></span>
+                  <span class="bars"></span>
+                </a>
+              <!-- Overlay -->
+              <div class="overlay" id="overlay">
+                <div>
+                  <ul>
+                    <li><a href="/">Contact</a></li>
+                    <li><a href="/">LinkedIn</a></li>
+                    <li><a href="/">Github</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- End Mobile Section -->
+            <!-- Start Search Section -->
+          </ul>
+        </nav>
+      </header>
+
+
 
     <div id = "about">
         <p id = "aboutText">
@@ -137,6 +162,6 @@
 <div id = "contactFooter">
     <a href = ""><h1 id = "contact">Get in touch.</h1></a>
 </div>
-
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
