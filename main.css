@@ -493,7 +493,7 @@ ul {
         left: 0%;
     }
 
-    .workDiv{
+  #workDiv{
         margin-top: 100px;
         width: 100%;
         left: 0%;
@@ -507,6 +507,7 @@ ul {
     .workDescription p{
         display: inline;
         position: absolute;
+        padding-right: 10%;
     }
     
 }
