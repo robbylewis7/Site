@@ -10,7 +10,7 @@
 
 body{
     margin: 0;
-    background: linear-gradient(141deg, #0E7C7B 0%, #4F9F9F 51%, #91C3C3 75%);
+    background-color: #7B886F;
     color: white;
 }
 
@@ -148,7 +148,7 @@ ul {
 
 .workDescription a:hover{
     text-decoration-line: underline;
-    text-decoration-color: #0E7C7B;
+    text-decoration-color: white;
 }
 
 #contactFooter{
