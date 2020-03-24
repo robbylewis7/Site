@@ -93,11 +93,13 @@ ul {
     width: 50%;
     line-height: 30px;
     font-size: 24px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Crimson Text', serif;
 }
 
 .description p{
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: .02em;
 }
 
 #stacks{
@@ -128,18 +130,21 @@ ul {
 .workDescription h1{
     font-size: 72px;
     font-family: "GroteskBold";
+    text-transform: capitalize;
 }
 
 .workDescription{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: .02em;
     width: 50%;
-    line-height: 30px;
-    font-size: 12px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Crimson Text', serif;
 }
 
 .workDescription p{
     display: none;
     position: absolute;
+    font-size: 18px;
 }
 
 .workDescription a:hover + #WDText{
@@ -161,12 +166,13 @@ ul {
 
 #contactFooter a:hover{
     text-decoration-line: underline;
-    text-decoration-color: #0E7C7B;
+    text-decoration-color: white;
 }
 
 #contact{
     color: white;
     font-size: 120px;
+    text-transform: capitalize;
 }
 
 
@@ -190,7 +196,7 @@ ul {
   .global-nav a {
     color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
   
   .global-nav ul {
@@ -298,7 +304,6 @@ ul {
   .bars {
     background: #fff;
     display: block;
-    border-radius: 4px;
     height: 4px;
     width: 100%;
     -webkit-transition: all 0.35s ease;
@@ -443,6 +448,17 @@ ul {
     text-transform: uppercase;
   }
 
+  @media only screen and (max-width: 1200px) {
+  .workDescription p{
+    display: inline;
+    position: absolute;
+    padding-right: 10%;
+    }
+
+    .work{
+        margin-bottom: 350px;
+    }
+  }
 
 @media only screen and (max-width: 600px) {
 
@@ -454,14 +470,14 @@ ul {
     }
     
     #aboutText{
+        padding: 0 20px;
         font-size: 50px;
         color: white;
         position: relative;
         line-height: normal;
         font-weight: bold;
         left: 0%;
-        padding: 0 40px;
-        top: 20%;
+        top: 15%;
     }
 
     #intro{
@@ -473,17 +489,6 @@ ul {
         margin-top: 100px;
         width: 100%;
         left: 0%;
-    }
-
-    .work{
-        margin-bottom: 350px;
-    }
-
-
-    .workDescription p{
-        display: inline;
-        position: absolute;
-        padding-right: 10%;
     }
     
 }
